@@ -23,6 +23,6 @@ void CWriter1::writer1Messages(const std::vector<std::string>& messages) const {
     for (const auto& msg : messages)
     {
         std::cout << msg << " ";
-    }
+    } 
     std::cout << std::endl;
 }

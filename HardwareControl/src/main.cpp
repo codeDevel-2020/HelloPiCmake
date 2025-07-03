@@ -3,7 +3,8 @@
  *****************************************************************************/
 #include "CWriter1.h"
 #include "CWriter2.h"
-#include "CWriter3.h"
+
+#include "CLoggerClient.h"
 
 
 /******************************************************************************
@@ -11,13 +12,15 @@
 int main() {
     CWriter1 writer1;
     CWriter2 writer2;
-    CWriter3 writer3; 
 
-    std::cout << "Starting Logger main..." << std::endl << std::endl;
+    CLoggerClient loggerClient;
 
-    writer1.writer1Message("Hello &&1++&&");
-    writer2.writer2Message("Hello ++2++!");
-    writer3.writer3Message("Hello --3--!"); 
- 
+    std::cout << "Starting HardwareControl main..." << std::endl << std::endl;
+
+    writer1.writer1Message("HardwareControl calls CMP_LIB_Utilities");
+    writer2.writer2Message("HardwareControl calls CMP_LIB_Utilities");
+
+    loggerClient.logMessage("This is a log message from the logger client (inside HardwareControl).");
+  
     return 0;
 }

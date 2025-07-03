@@ -12,3 +12,4 @@ void CLoggerClient::logMessage(const std::string& message) const {
     std::cout << "# LOG MESSAGE "<< message << std::endl;   
 }
 
+ 
