@@ -15,12 +15,13 @@ int main() {
 
     CLoggerClient loggerClient;
 
-    std::cout << "Starting HardwareControl main..." << std::endl << std::endl;
+    std::cout << "Starting HardwareControl main..." << std::endl << std::endl; 
 
     writer1.writer1Message("HardwareControl calls CMP_LIB_Utilities");
     writer2.writer2Message("HardwareControl calls CMP_LIB_Utilities");
 
     loggerClient.logMessage("This is a log message from the logger client (inside HardwareControl).");
+
   
     return 0;
 }
