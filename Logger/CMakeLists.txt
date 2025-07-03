@@ -14,7 +14,7 @@ set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
 set(CMAKE_CXX_STANDARD 11)
 
 
-project(HelloWorldPi VERSION 1.0.0 LANGUAGES CXX C)
+project(Logger VERSION 1.0.0 LANGUAGES CXX C)
 
 
 # Add the source files of this subsystem
@@ -35,10 +35,10 @@ include_directories(../Utilities/folder1)
 include_directories(../Utilities/folder2)
 
 
-add_executable(HelloWorldPi.elf ${MY_SUBSYSTEM_SOURCES})
+add_executable(Logger.elf ${MY_SUBSYSTEM_SOURCES})
 
 
-target_link_libraries(HelloWorldPi.elf
+target_link_libraries(Logger.elf
     Utilities
     pthread
 )
