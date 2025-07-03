@@ -1,22 +1,27 @@
+#ifndef __CWRITER3_H__
+#define __CWRITER3_H__
+
 
 /******************************************************************************
  * Includes
  *****************************************************************************/
 
-#include "Calc.h"
-
- 
-/******************************************************************************
- *****************************************************************************/
-int calcAdd(int a, int b) {
-
-    return a + b;      
-}
+#include <iostream>
+#include <vector>
+#include <string>
 
 
 /******************************************************************************
  *****************************************************************************/
-int calcSub(int a, int b) {
+class CWriter3 {
 
-    return a - b;      
-}
+    public:
+        CWriter3() {};
+        ~CWriter3() {};
+
+        void writer3Message(const std::string& message) const;
+        void writer3Messages(const std::vector<std::string>& messages) const;
+};
+
+
+#endif

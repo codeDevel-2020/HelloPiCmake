@@ -23,6 +23,15 @@ extern "C" {
 int calcAdd(int a, int b);
 
 
+/******************************************************************************
+ * @brief   Function to subtract two integers
+ * @param   a First integer
+ * @param   b Second integer 
+ * @return  The subtraction of the two integers
+ *****************************************************************************/
+int calcSub(int a, int b);
+
+
 #ifdef __cplusplus
 }
 #endif
