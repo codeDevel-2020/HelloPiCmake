@@ -25,4 +25,4 @@ void CWriter3::writer3Messages(const std::vector<std::string>& messages) const {
         std::cout << msg << " ";
     }
     std::cout << std::endl;
-}
+} 

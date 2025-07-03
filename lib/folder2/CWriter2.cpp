@@ -9,8 +9,8 @@
  *****************************************************************************/
 void CWriter2::writer2Message(const std::string& message) const {
 
-    std::cout << "Writer 2 !!!!!! -> " << message << " calc from c-file (5+2): " << calcAdd(5,2) << std::endl;
-}
+    std::cout << "Writer 2 !!!!!! -> " << message << " calc from c-file (10+11): " << calcAdd(10,11) << std::endl;  
+} 
 
 
 /******************************************************************************
