@@ -15,8 +15,8 @@ add_subdirectory(../subfolder1 ./subfolder1)
 include_directories(../subfolder1)
 
 # Include directories (libraries) during compilation
-include_directories(../../Utilities/folder1)
-include_directories(../../Utilities/folder2)
+include_directories(../../Utilities/src/folder1)
+include_directories(../../Utilities/src/folder2)
 
 
 add_executable(Logger.elf ${CMP_ELF_LOGGER_SRC})
