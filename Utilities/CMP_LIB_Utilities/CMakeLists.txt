@@ -11,4 +11,4 @@ include_directories(../folder1)
 include_directories(../folder2)
 
 # Pack the source files into the library
-add_library(Utilities ${MY_LIB_SOURCES})
+add_library(Utilities ${CMP_LIB_UTILITIES_SRC})

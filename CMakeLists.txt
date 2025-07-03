@@ -17,4 +17,5 @@ set(CMAKE_CXX_STANDARD 11)
 project(HomeControl VERSION 1.0.0 LANGUAGES CXX C)
 
 add_subdirectory(Utilities/CMP_LIB_Utilities CMP_LIB_Utilities)
+add_subdirectory(Logger/CMP_LIB_LoggerClient CMP_LIB_LoggerClient)
 add_subdirectory(Logger/CMP_ELF_Logger CMP_ELF_Logger)
