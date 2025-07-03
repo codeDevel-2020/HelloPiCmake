@@ -3,10 +3,10 @@
 project(LoggerClient VERSION 1.0.0 LANGUAGES CXX C)
 
 # Subdirectories with source files (CMakeLists.txt files)
-add_subdirectory(../clientFolder ./clientFolder)
+add_subdirectory(../src/clientFolder ./clientFolder)
 
 # Include directories during compilation
-include_directories(../clientFolder)
+include_directories(../src/clientFolder)
 
 # Pack the source files into the library
 add_library(LoggerClient ${CMP_LIB_LOGGER_CLIENT_SRC})
