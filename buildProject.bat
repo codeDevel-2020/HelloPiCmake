@@ -1,5 +1,2 @@
-cd lib
-call lib\buildLib.bat
-
-cd main
-call buildProject.bat
+cd build
+call make all
