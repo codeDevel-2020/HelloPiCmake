@@ -25,26 +25,20 @@ list(APPEND MY_SUBSYSTEM_SOURCES
 # Subdirectories with source files (CMakeLists.txt files)
 add_subdirectory(subfolder1)
 
-add_subdirectory(../lib ../build/lib)
+add_subdirectory(../Utilities ../build/Utilities)
 
 # Include directories (this subsystem) during compilation
 include_directories(subfolder1)
 
 # Include directories (libraries) during compilation
-include_directories(../lib/folder1)
-include_directories(../lib/folder2)
-
-
-
-
-# The directory of the library build directory (library location)
-#link_directories(../lib/build)
+include_directories(../Utilities/folder1)
+include_directories(../Utilities/folder2)
 
 
 add_executable(HelloWorldPi.elf ${MY_SUBSYSTEM_SOURCES})
 
 
 target_link_libraries(HelloWorldPi.elf
-    WriterLibrary
+    Utilities
     pthread
 )
