@@ -1,5 +1,5 @@
 
-project(HardwareControl VERSION 1.0.0 LANGUAGES CXX C)
+project(CMP_ELF_HardwareControl VERSION 1.0.0 LANGUAGES CXX C)
 
 
 # Add the source files of this subsystem
@@ -14,11 +14,11 @@ include_directories(../../Utilities/src/folder2)
 include_directories(../../Logger/src/clientFolder)
 
 
-add_executable(HardwareControl.elf ${CMP_ELF_HARDWARECONTROL_SRC})
+add_executable(CMP_ELF_HardwareControl ${CMP_ELF_HARDWARECONTROL_SRC})
 
 
-target_link_libraries(HardwareControl.elf
-    Utilities
-    LoggerClient
+target_link_libraries(CMP_ELF_HardwareControl
+    CMP_LIB_Utilities
+    CMP_LIB_LoggerClient
     pthread
 )

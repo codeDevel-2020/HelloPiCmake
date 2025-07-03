@@ -15,9 +15,9 @@ int main() {
 
     std::cout << "Starting Logger main..." << std::endl << std::endl;
 
-    writer1.writer1Message("Hello From Logger.elf 1!");
-    writer2.writer2Message("Hello From Logger.elf 2!");
-    writer3.writer3Message("Hello From Logger.elf 3!");
+    writer1.writer1Message("Hello From Logger 1!");
+    writer2.writer2Message("Hello From Logger 2!");
+    writer3.writer3Message("Hello From Logger 3!");
  
     return 0;
 }
