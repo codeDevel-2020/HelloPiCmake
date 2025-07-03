@@ -1,1 +1,1 @@
-cmake -S ./ -B ./build -G "Unix Makefiles"
+cmake -S ./ -B ./_build -G "Unix Makefiles"

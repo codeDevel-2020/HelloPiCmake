@@ -1,2 +1,2 @@
-cd build
+cd _build
 call make all
