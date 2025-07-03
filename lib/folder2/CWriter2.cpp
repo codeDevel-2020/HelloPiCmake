@@ -1,14 +1,22 @@
+/******************************************************************************
+ * Includes
+ *****************************************************************************/
 #include "CWriter2.h"
+#include "Calc.h"
 
+ 
+/******************************************************************************
+ *****************************************************************************/
+void CWriter2::writer2Message(const std::string& message) const {
 
-
-void CWriter2::writer2Message(const std::string& message) const
-{
-    std::cout << "Writer 2 !!!!!! -> " << message << std::endl;
+    std::cout << "Writer 2 !!!!!! -> " << message << " calc from c-file (5+2): " << calcAdd(5,2) << std::endl;
 }
 
-void CWriter2::writer2Messages(const std::vector<std::string>& messages) const
-{
+
+/******************************************************************************
+ *****************************************************************************/
+void CWriter2::writer2Messages(const std::vector<std::string>& messages) const {
+    
     std::cout << "Writer 2 -> ";
     
     for (const auto& msg : messages)

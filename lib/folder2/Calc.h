@@ -1,26 +1,31 @@
-#ifndef __CWRITER2_H__
-#define __CWRITER2_H__
+#ifndef __CALC_H__
+#define __CALC_H__
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 
 /******************************************************************************
  * Includes
  *****************************************************************************/
-#include <iostream>
-#include <vector>
-#include <string>
+
+#include "stdint.h"
 
 
 /******************************************************************************
+ * @brief   Function to add two integers
+ * @param   a First integer
+ * @param   b Second integer 
+ * @return  The sum of the two integers
  *****************************************************************************/
-class CWriter2 {
-
-    public:
-    CWriter2() {};
-        ~CWriter2() {};
-
-        void writer2Message(const std::string& message) const;
-        void writer2Messages(const std::vector<std::string>& messages) const;
-};
+int calcAdd(int a, int b);
 
 
+#ifdef __cplusplus
+}
 #endif
+
+
+#endif // __CALC_H__

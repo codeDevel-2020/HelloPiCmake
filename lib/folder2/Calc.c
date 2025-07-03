@@ -1,26 +1,14 @@
-#ifndef __CWRITER2_H__
-#define __CWRITER2_H__
-
 
 /******************************************************************************
  * Includes
  *****************************************************************************/
-#include <iostream>
-#include <vector>
-#include <string>
 
+#include "Calc.h"
 
+ 
 /******************************************************************************
  *****************************************************************************/
-class CWriter2 {
+int calcAdd(int a, int b) {
 
-    public:
-    CWriter2() {};
-        ~CWriter2() {};
-
-        void writer2Message(const std::string& message) const;
-        void writer2Messages(const std::vector<std::string>& messages) const;
-};
-
-
-#endif
+    return a + b;      
+}
