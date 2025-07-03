@@ -12,3 +12,11 @@ include_directories(../src/folder2)
 
 # Pack the source files into the library
 add_library(CMP_LIB_Utilities ${CMP_LIB_UTILITIES_SRC})
+
+
+target_include_directories(CMP_LIB_Utilities
+    PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ../src/folder1
+        ../src/folder2
+)

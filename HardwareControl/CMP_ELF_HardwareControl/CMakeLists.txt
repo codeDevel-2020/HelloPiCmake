@@ -7,15 +7,8 @@ list(APPEND CMP_ELF_HARDWARECONTROL_SRC
     ${CMAKE_CURRENT_LIST_DIR}/../src/main.cpp
 )
 
-# Include directories (libraries) during compilation
-include_directories(../../Utilities/src/folder1)
-include_directories(../../Utilities/src/folder2)
-
-include_directories(../../Logger/src/clientFolder)
-
 
 add_executable(CMP_ELF_HardwareControl ${CMP_ELF_HARDWARECONTROL_SRC})
-
 
 target_link_libraries(CMP_ELF_HardwareControl
     CMP_LIB_Utilities
