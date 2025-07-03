@@ -25,7 +25,7 @@ list(APPEND MY_SUBSYSTEM_SOURCES
 # Subdirectories with source files (CMakeLists.txt files)
 add_subdirectory(subfolder1)
 
-add_subdirectory(../Utilities ../build/Utilities)
+add_subdirectory(../Utilities/CMP_LIB_Utilities ../build/Utilities/CMP_LIB_Utilities)
 
 # Include directories (this subsystem) during compilation
 include_directories(subfolder1)
