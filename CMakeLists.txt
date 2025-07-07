@@ -26,6 +26,10 @@ set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
 set(CMAKE_CXX_STANDARD 11)
 
 
+# Custom runfiles directory (cached for all subdirectories)
+set(RUNFILES_DIR "${CMAKE_SOURCE_DIR}/_runfiles" CACHE PATH "Directory for runfiles")
+
+
 project(HomeControl VERSION 1.0.0 LANGUAGES CXX C)
 
 add_subdirectory(Utilities/CMP_LIB_Utilities CMP_LIB_Utilities)

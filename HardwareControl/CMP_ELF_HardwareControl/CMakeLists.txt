@@ -20,10 +20,10 @@ target_link_libraries(CMP_ELF_HardwareControl
 )
 
 
-# Custom post build command to copy the executable to a runfiles directory
+# Custom command (post build) to copy the executable to the runfiles directory
 add_custom_command(
     TARGET CMP_ELF_HardwareControl POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E make_directory "${CMAKE_SOURCE_DIR}/_runfiles"
-    COMMAND ${CMAKE_COMMAND} -E copy "$<TARGET_FILE:CMP_ELF_HardwareControl>" "${CMAKE_SOURCE_DIR}/_runfiles/"
-    COMMENT "Copying 'CMP_ELF_HardwareControl' to '_runfiles' directory"
+    COMMAND ${CMAKE_COMMAND} -E make_directory "${RUNFILES_DIR}"
+    COMMAND ${CMAKE_COMMAND} -E copy "$<TARGET_FILE:CMP_ELF_HardwareControl>" "${RUNFILES_DIR}/"
+    COMMENT "Copying 'CMP_ELF_HardwareControl' to '${RUNFILES_DIR}' directory"
 )
