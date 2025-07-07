@@ -27,7 +27,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 
 # Custom runfiles directory (cached for all subdirectories)
-set(RUNFILES_DIR "${CMAKE_SOURCE_DIR}/_runfiles/$<CONFIG>" CACHE PATH "Directory for runfiles")
+set(RUNFILES_DIR "${CMAKE_SOURCE_DIR}/_elfFiles/$<CONFIG>" CACHE PATH "Directory for runfiles")
 
 
 project(HomeControl VERSION 1.0.0 LANGUAGES CXX C)
