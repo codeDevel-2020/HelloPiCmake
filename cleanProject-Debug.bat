@@ -1,2 +1,2 @@
 cd _build/Debug
-call make all
+call make clean

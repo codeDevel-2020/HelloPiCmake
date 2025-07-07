@@ -20,7 +20,8 @@ int main() {
     writer1.writer1Message("HardwareControl calls CMP_LIB_Utilities");
     writer2.writer2Message("HardwareControl calls CMP_LIB_Utilities");
 
-    loggerClient.logMessage("This is a log message from the logger client (inside HardwareControl).");
+    loggerClient.logMessage("This is a log message from the logger client (inside HardwareControl).");   
+
 
   
     return 0;

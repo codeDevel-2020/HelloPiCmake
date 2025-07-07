@@ -1,1 +1,1 @@
-cmake -DCMAKE_BUILD_TYPE=Release -S ./ -B ./build/Release -G "Unix Makefiles"
+cmake -DCMAKE_BUILD_TYPE=Release -S ./ -B ./_build/Release -G "Unix Makefiles"
