@@ -9,7 +9,14 @@
  *****************************************************************************/
 void CWriter2::writer2Message(const std::string& message) const {
 
-    std::cout << "Writer 2 !!!!!! -> " << message << " calc from c-file (10+11): " << calcAdd(10,11) << std::endl;  
+
+#ifndef NDEBUG
+    // Debug build
+    std::cout << "DEBUG Writer 2 !!!!!! -> " << message << " calc from c-file (10+11): " << calcAdd(10,11) << std::endl;  
+#else 
+    // Release build
+    std::cout << "RELEASE Writer 2 !!!!!! -> " << message << " calc from c-file (10+11): " << calcAdd(10,11) << std::endl; 
+#endif
 } 
 
 
